@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function navFunc(d) {
+        $("#content").load((d.getAttribute('href')));
+    }
+</script>
+<div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="insdata-logo-image" src="images/insdata-logo.png">
+          </span>
+    <!-- Add spacer, to align navigation to the right in desktop -->
+    <div class="android-header-spacer mdl-layout-spacer"></div>
+    <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+            <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search-field">
+        </div>
+    </div>
+    <!-- Navigation -->
+    <div class="android-navigation-container">
+        <nav class="android-navigation mdl-navigation">
+            <p class="mdl-navigation__link" href="home.html" onclick="navFunc(this)">Home</p>
+            <p class="mdl-navigation__link" href="people.html" onclick="navFunc(this)">People</p>
+            <p class="mdl-navigation__link" href="publications.html" onclick="navFunc(this)">Publications</p>
+            <p class="mdl-navigation__link" href="opensources.html" onclick="navFunc(this)">Open Sources</p>
+            <p class="mdl-navigation__link" href="groupwiki.html" onclick="navFunc(this)">Group Wiki</p>
+            <p class="mdl-navigation__link" href="calendar.html" onclick="navFunc(this)">Calendar</p>
+        </nav>
+    </div>
+    <span class="android-mobile-title mdl-layout-title">
+            <img class="insdata-logo-image" src="images/insdata-logo.png">
+          </span>
+    </ul>
+</div>
+</body>
+</html>
