@@ -540,3 +540,20 @@ a img{
     display: none;
   }
 }
+
+
+#footer	a.faculty {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:28px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #231f20;
+}
+
+#footer	a.school {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:19px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #231f20;
+}
