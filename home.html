@@ -4,103 +4,40 @@
     <meta charset="UTF-8">
     <title>home</title>
 </head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
-
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
+    function navFunc(d) {
+        $("#content").load((d.getAttribute('href')));
     }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("photoSlides");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-    }
-
 </script>
+
 <div id="particles-js"></div>
 
 <div class="content-grid mdl-grid">
-    <div class="w3-content w3-display-container mdl-cell mdl-cell--6-col">
-        <img class="photoSlides" src="images/gallery/fig1.jpg" style="width:100%">
-        <img class="photoSlides" src="images/gallery/fig2.jpg" style="width:100%">
-        <img class="photoSlides" src="images/gallery/fig3.jpg" style="width:100%">
-        <img class="photoSlides" src="images/gallery/fig4.jpg" style="width:100%">
-        <img class="photoSlides" src="images/gallery/fig5.jpg" style="width:100%">
-
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    </div>
-    <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
-    <div class="mdl-typography-body-1 mdl-cell mdl-cell--4-col">
+    <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+    <div class="mdl-cell mdl-cell--4-col">
         <p><br/></p>
-        <h2> Welcome to insdata!</h2>
-        <p><br/><br/>
-            Our group leader Lina is currently a lecturer at School of Computer Science and Engineering,
+        <p>
+            <span style="font-size: x-large"> Welcome to </span><br/><br/>
+            <span style="font-size: xx-large">Interactive Intelligence Systems</span>
+            <span style="font-size: x-large"> @ UNSW</span>
+        </p>
+        <p><br/>
+            Our group research interest lies in Internet of Things Analytics/Cyber-Physical Systems, Data Mining,
+            Pervasive and Ubiquitous Computing, Ambient Intelligence and Service Computing. <br/>
+            The group is led by Dr Lina Yao, who is currently a lecturer at School of Computer Science and Engineering,
             The University of New South Wales (UNSW), Australia. She is ARC Discovery Early Career Researcher Award
             (DECRA)
-            Fellow between 2016-2018 (awarded in 2015). <br/>
-            The whole group research interest lies in Internet of Things Analytics/Cyber-Physical Systems, Data Mining,
-            Pervasive and Ubiquitous Computing, Ambient Intelligence and Service Computing.
+            Fellow between 2016-2018 (awarded in 2015).<br/>
+
         </p>
     </div>
     <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
-</div>
-
-<!--research interets-->
-<div class="content-grid mdl-grid">
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-         style='background-image: url("images/others/har.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
-            <span class="demo-card-image__filename">Human Activity Recognition</span>
-        </div>
-    </div>
-
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-         style='background-image: url("images/others/iot.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
-            <span class="demo-card-image__filename">Internet of Things</span>
-        </div>
-    </div>
-
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-         style='background-image: url("images/others/bci.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
-            <span class="demo-card-image__filename">Brain Computer Interface</span>
-        </div>
-    </div>
-
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-         style='background-image: url("images/others/recsys.jpeg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
-            <span class="demo-card-image__filename">Recommender Systems</span>
-        </div>
-    </div>
-</div>
-
-<div class="content-grid mdl-grid">
-    <div class="mdl-typography-body-2 mdl-cell mdl-cell--12-col" style="color: #767777">
+    <div class="mdl-typography-body-2 mdl-cell mdl-cell--3-col">
         <p><br/></p>
-        <h3> Lastest news</h3>
+        <h4> Lastest news</h4>
         <p><br/>
             Congratulations to Kaixuan, on her IJCNN 2018 paper "Interpretable Parallel Recurrent Neural Networks with
             Convolutional Attentions for Multi-Modality Activity Modeling "!<br/>
@@ -112,12 +49,54 @@
                     href="https://www.youtube.com/watch?v=Dc0StUPq61k&list=PL8nHiAwRrq8I4aYQBPdelwGXIaqMVtYni">Youtube
                 Channel</a>.<br/>
 
-
         </p>
     </div>
     <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
 </div>
 
+<div class="content-grid mdl-grid" style="display: block; bottom: 20px; ">
+</div>
+
+<!--research interets-->
+<div class="content-grid mdl-grid">
+    <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+         style='background-image: url("images/others/har.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
+         href="har.html" onclick="navFunc(this)">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
+            <span class="demo-card-image__filename">Human Activity Recognition</span>
+        </div>
+    </div>
+
+    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+         style='background-image: url("images/others/iot.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
+         href="iot.html" onclick="navFunc(this)">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
+            <span class="demo-card-image__filename">Internet of Things Analytics</span>
+        </div>
+    </div>
+
+    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+         style='background-image: url("images/others/bci.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
+         href="bci.html" onclick="navFunc(this)">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
+            <span class="demo-card-image__filename">Brain Computer Interface</span>
+        </div>
+    </div>
+
+    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+         style='background-image: url("images/others/recsys.jpeg"); background-size: cover ; background-repeat: no-repeat, repeat;'
+         href="rfs.html" onclick="navFunc(this)">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
+            <span class="demo-card-image__filename">Recommender & Filtering Systems</span>
+        </div>
+    </div>
+    <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+</div>
 
 </body>
 </html>
