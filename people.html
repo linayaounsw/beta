@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("photoSlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 <style>
     .demo-card-image.mdl-card {
@@ -23,6 +49,19 @@
         font-weight: 500;
     }
 </style>
+
+
+<!--<div class="w3-content w3-display-container mdl-cell mdl-cell&#45;&#45;6-col">-->
+<!--<img class="photoSlides" src="images/gallery/fig1.jpg" style="width:100%">-->
+<!--<img class="photoSlides" src="images/gallery/fig2.jpg" style="width:100%">-->
+<!--<img class="photoSlides" src="images/gallery/fig3.jpg" style="width:100%">-->
+<!--<img class="photoSlides" src="images/gallery/fig4.jpg" style="width:100%">-->
+<!--<img class="photoSlides" src="images/gallery/fig5.jpg" style="width:100%">-->
+
+<!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>-->
+<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
+<!--</div>-->
+
 <div class="content">
     <p class="mdl-typography--display-1"><br/> Group leader</p>
     <div class="content-grid mdl-grid">
