@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<script>
+    function navFunc(d) {
+        $("#content").load((d.getAttribute('href')));
+    }
+</script>
 <body>
-groupwiki
+<div class="content">
+    <p class="mdl-typography--display-2"><br/> Group Wikis</p>
+
+    <div class="mdl-typography--display-1">
+        <ul class="mdl-list">
+            <li class="mdl-list__item mdl-list__item--three-line" href="wiki/Slides.html" onclick="navFunc(this)">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+        <span>Reading and Learning Group Slides</span>
+        <span class="mdl-list__item-text-body">
+        Archives of presented slides for reading and learning group activity of our own group. Coordinated by Manqing Dong and Xiang Zhang.
+      </span>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line" href="wiki/tutorial_ML4B.html"
+                onclick="navFunc(this)">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>Machine Learning Tutorial for Beginners</span>
+      <span class="mdl-list__item-text-body">
+             06/03/17 by Guangyang Qi
+      </span>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line" href="wiki/GPUSrv.html" onclick="navFunc(this)">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>Wiki of DrStrange: Group GPU Accelerated Computing Server</span>
+      <span class="mdl-list__item-text-body">
+         03/07/17 by Chaoran Huang
+      </span>
+    </span>
+            </li>
+        </ul>
+    </div>
+
+</div>
 </body>
 </html>
