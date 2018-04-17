@@ -7,11 +7,11 @@
 <body>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
-<script>
-    function navFunc(d) {
-        $("#content").load((d.getAttribute('href')));
+<style>
+    a:link, a:visited {
+        color: white;
     }
-</script>
+</style>
 
 <div id="particles-js"></div>
 
@@ -60,41 +60,37 @@
 <!--research interets-->
 <div class="content-grid mdl-grid">
     <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
-         style='background-image: url("images/others/har.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
-         href="har.html" onclick="navFunc(this)">
+    <a href="har.html" class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+       style='background-image: url("images/others/har.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
             <span class="demo-card-image__filename">Human Activity Recognition</span>
         </div>
-    </div>
+    </a>
 
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
-         style='background-image: url("images/others/iot.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
-         href="iot.html" onclick="navFunc(this)">
+    <a href="iot.html" class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+       style='background-image: url("images/others/iot.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
             <span class="demo-card-image__filename">Internet of Things Analytics</span>
         </div>
-    </div>
+    </a>
 
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
-         style='background-image: url("images/others/bci.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'
-         href="bci.html" onclick="navFunc(this)">
+    <a href="bci.html" class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+       style='background-image: url("images/others/bci.jpg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
             <span class="demo-card-image__filename">Brain Computer Interface</span>
         </div>
-    </div>
+    </a>
 
-    <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
-         style='background-image: url("images/others/recsys.jpeg"); background-size: cover ; background-repeat: no-repeat, repeat;'
-         href="rfs.html" onclick="navFunc(this)">
+    <a href="rfs.html" class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--2-col"
+       style='background-image: url("images/others/recsys.jpeg"); background-size: cover ; background-repeat: no-repeat, repeat;'>
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions" style="background-color: hsla(80, 20%, 20%, 0.5); ">
             <span class="demo-card-image__filename">Recommender & Filtering Systems</span>
         </div>
-    </div>
+    </a>
     <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
 </div>
 

@@ -2,14 +2,9 @@
 <html lang="en">
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    function navFunc(d) {
-        $("#content").load((d.getAttribute('href')));
-    }
-</script>
 <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="insdata-logo-image" src="images/insdata-logo.png">
+            <img class="insdata-logo-image" src="/images/insdata-logo.png">
           </span>
     <!-- Add spacer, to align navigation to the right in desktop -->
     <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -24,19 +19,18 @@
     <!-- Navigation -->
     <div class="android-navigation-container">
         <nav class="android-navigation mdl-navigation">
-            <p class="mdl-navigation__link" href="home.html" onclick="navFunc(this)">Home</p>
-            <p class="mdl-navigation__link" href="people.html" onclick="navFunc(this)">People</p>
-            <p class="mdl-navigation__link" href="publications.html" onclick="navFunc(this)">Publications</p>
-            <p class="mdl-navigation__link" href="opensources.html" onclick="navFunc(this)">Demo and Open Source</p>
-            <p class="mdl-navigation__link" href="groupwiki.html" onclick="navFunc(this)">Group Wiki</p>
-            <p class="mdl-navigation__link" href="calendar.html" onclick="navFunc(this)">Calendar</p>
+            <a class="mdl-navigation__link" href="/index.html">Home</a>
+            <a class="mdl-navigation__link" href="/people.html">People</a>
+            <a class="mdl-navigation__link" href="/publications.html">Publications</a>
+            <a class="mdl-navigation__link" href="/opensources.html">Demo and Open Source</a>
+            <a class="mdl-navigation__link" href="/wiki/">Group Wiki</a>
+            <a class="mdl-navigation__link" href="/calendar.html">Calendar</a>
         </nav>
     </div>
     <span class="android-mobile-title mdl-layout-title">
-            <img class="insdata-logo-image" src="images/insdata-logo.png">
+            <img class="insdata-logo-image" src="/images/insdata-logo.png">
           </span>
     </ul>
-
 
 </div>
 </body>

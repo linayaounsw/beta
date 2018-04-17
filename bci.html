@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BCI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="insData, School of Computer Science and Engineering, UNSW Sydney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>insData Group</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
 <style>
     .demo-card-image.mdl-card {
@@ -27,118 +52,147 @@
         font-weight: 500;
     }
 </style>
-<div class="content">
-    <div class="content-grid mdl-grid">
-        <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
-        <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
-            <p><br/></p>
-            <p>
-                <span style="font-size: xx-large">Brain Computer Interface </span><br/>
-                <span style="font-size: x-large">@Interactive Intelligence Systems</span>
-            </p>
-            <p><br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Fringilla phasellus faucibus scelerisque eleifend. Viverra ipsum nunc aliquet
-                bibendum enim facilisis. Sagittis orci a scelerisque purus semper. Arcu dictum varius duis at. Vel orci
-                porta non pulvinar neque laoreet. Neque convallis a cras semper auctor neque. Amet luctus venenatis
-                lectus magna fringilla urna porttitor. Non enim praesent elementum facilisis. Tempus quam pellentesque
-                nec nam aliquam. Dignissim suspendisse in est ante in. Purus gravida quis blandit turpis cursus in. Id
-                aliquet risus feugiat in ante.
-            </p>
-        </div>
-    </div>
-    <p class="mdl-typography--display-1"><br/> Group members</p>
-    <div class="content-grid mdl-grid">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div id="navbar"></div>
 
-        <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-             style='background-image: url("images/people/xiangzhang.jpg")'>
-            <div class="mdl-card__title mdl-card--expand"></div>
-            <div class="mdl-card__actions">
-                <span class="demo-card-image__filename">Xiang Zhang</span>
+        <div class="content">
+            <div class="content-grid mdl-grid">
+                <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
+                    <p><br/></p>
+                    <p>
+                        <span style="font-size: xx-large">Brain Computer Interface </span><br/>
+                        <span style="font-size: x-large">@Interactive Intelligence Systems</span>
+                    </p>
+                    <p><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Fringilla phasellus faucibus scelerisque eleifend. Viverra ipsum nunc
+                        aliquet
+                        bibendum enim facilisis. Sagittis orci a scelerisque purus semper. Arcu dictum varius duis at.
+                        Vel orci
+                        porta non pulvinar neque laoreet. Neque convallis a cras semper auctor neque. Amet luctus
+                        venenatis
+                        lectus magna fringilla urna porttitor. Non enim praesent elementum facilisis. Tempus quam
+                        pellentesque
+                        nec nam aliquam. Dignissim suspendisse in est ante in. Purus gravida quis blandit turpis cursus
+                        in. Id
+                        aliquet risus feugiat in ante.
+                    </p>
+                </div>
+            </div>
+            <p class="mdl-typography--display-1"><br/> Group members</p>
+            <div class="content-grid mdl-grid">
+
+                <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
+                     style='background-image: url("images/people/xiangzhang.jpg")'>
+                    <div class="mdl-card__title mdl-card--expand"></div>
+                    <div class="mdl-card__actions">
+                        <span class="demo-card-image__filename">Xiang Zhang</span>
+                    </div>
+                </div>
+                <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
+                     style='background-image: url("images/people/dalin.jpg")'>
+                    <div class="mdl-card__title mdl-card--expand"></div>
+                    <div class="mdl-card__actions">
+                        <span class="demo-card-image__filename">Dalin Zhang</span>
+                    </div>
+                </div>
+
+                <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
+                     style='background-image: url("images/people/chaoran.jpg")'>
+                    <div class="mdl-card__title mdl-card--expand"></div>
+                    <div class="mdl-card__actions">
+                        <span class="demo-card-image__filename">Chaoran Huang</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-grid mdl-grid">
+                <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
+                <div>
+                    <p class="mdl-typography--display-1"><br/> Conference papers</p>
+                    <ol class="pub-list">
+                        <li data-pub-year="2018"><p>Dalin Zhang, <span class="pub-me">Lina Yao</span>, Sen Wang, Kaixuan
+                            Chen,
+                            Zheng
+                            Yang and Boualem Benatallah. <span class="pub-title">Fuzzy Integral Optimization with Deep Q-Network for EEG-based Intention Recognition.</span>
+                            The 22nd Pacific-Asia Conference on Knowledge Discovery and Data Mining (<a
+                                    href="http://prada-research.net/pakdd18/">PAKDD 2018</a>), Melbourne, Australia,
+                            June 3 - 6,
+                            2018.
+
+                        </p></li>
+                        <li data-pub-year="2018"><p>Weitong Chen, Sen Wang, Xiang Zhang, <span
+                                class="pub-me">Lina Yao</span>,
+                            Lin Yue,
+                            Buyue Qian and Xue Li. <span
+                                    class="pub-title">EEG-based Motion Intention Recognition via Multi-task RNNs.</span>
+                            SIAM
+                            International Conference on Data Mining (<a href="http://www.siam.org/meetings/sdm18/">SDM
+                                2018</a>),
+                            San
+                            Diego, USA, May 3 - 5, 2018.
+
+                        </p></li>
+                        <li data-pub-year="2018"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Quan Z. Sheng,
+                            Salil S.
+                            Kanhere,
+                            Tao Gu and Dalin Zhang. <span class="pub-title">Converting Your Thougts to Texts: Enabling Brain Typing via Deep Feature Learning of EEG Signals.</span>
+                            IEEE International Conference on Pervasive Computing and Communications (<a
+                                    href="http://www.percom.org/">Percom
+                                2018</a>), Athens, Greece, Mar 19, 2018 - Mar 23, 2018.
+
+                        </p></li>
+                        <li data-pub-year="2018"><p>Dalin Zhang, <span class="pub-me">Lina Yao</span>, Xiang Zhang, Sen
+                            Wang,
+                            Weitong
+                            Chen, Robert Boots. <span class="pub-title">Cascade and Parallel Convolutional Recurrent Neural Networks on EEG-based Intention Recognition for Brain Computer Interface.</span>
+                            The 32nd AAAI Conference on Artifical Intelligence (<a
+                                    href="https://aaai.org/Conferences/AAAI/aaai18.php">AAAI-18</a>),
+                            New Orleans, Lousiana, USA, 2 - 7 February, 2018</p></li>
+
+                        <li data-pub-year="2017"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Chaoran Huang,
+                            QuanZheng
+                            Sheng
+                            and Xianzhi Wang, <span class="pub-title"> Intent Recognition in Smart Living Through Deep Recurrent Neural Networks</span>.
+                            The 24th International Conference On Neural Information Processing (<a
+                                    href="http://www.iconip2017.org/"><abbr
+                                    title="The 24th International Conference On Neural Information Processing">ICONIP</abbr>
+                                2017</a>).
+                            Guangzhou, China, November 14-18, 2017.</p></li>
+
+                        <li data-pub-year="2017"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Dalin Zhang,
+                            Xianzhi
+                            Wang, Quan
+                            Z. Sheng and Tao Gu. <span class="pub-title"> Multi-Person Brain Activity Recognition via Comprehensive EEG Signal Analysis</span>.
+                            The 14th International Conference on Mobile and Ubiquitous Systems: Computing, Networking
+                            and
+                            Services (<a
+                                    href="http://mobiquitous.org/2017/show/home">Mobiquitous 2017</a>). Melbourne,
+                            Australia Nov
+                            7 - 10,
+                            2017</p></li>
+
+                    </ol>
+
+                    <!--<p class="mdl-typography&#45;&#45;display-1"><br/> Journal articles</p>-->
+                    <!--<ol class="pub-list">-->
+                    <!--</ol>-->
+                </div>
+
+                </p>
             </div>
         </div>
-        <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-             style='background-image: url("images/people/dalin.jpg")'>
-            <div class="mdl-card__title mdl-card--expand"></div>
-            <div class="mdl-card__actions">
-                <span class="demo-card-image__filename">Dalin Zhang</span>
-            </div>
-        </div>
-
-        <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-             style='background-image: url("images/people/chaoran.jpg")'>
-            <div class="mdl-card__title mdl-card--expand"></div>
-            <div class="mdl-card__actions">
-                <span class="demo-card-image__filename">Chaoran Huang</span>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="content-grid mdl-grid">
-        <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
-        <div>
-            <p class="mdl-typography--display-1"><br/> Conference papers</p>
-            <ol class="pub-list">
-                <li data-pub-year="2018"><p>Dalin Zhang, <span class="pub-me">Lina Yao</span>, Sen Wang, Kaixuan Chen,
-                    Zheng
-                    Yang and Boualem Benatallah. <span class="pub-title">Fuzzy Integral Optimization with Deep Q-Network for EEG-based Intention Recognition.</span>
-                    The 22nd Pacific-Asia Conference on Knowledge Discovery and Data Mining (<a
-                            href="http://prada-research.net/pakdd18/">PAKDD 2018</a>), Melbourne, Australia, June 3 - 6,
-                    2018.
-
-                </p></li>
-                <li data-pub-year="2018"><p>Weitong Chen, Sen Wang, Xiang Zhang, <span class="pub-me">Lina Yao</span>,
-                    Lin Yue,
-                    Buyue Qian and Xue Li. <span
-                            class="pub-title">EEG-based Motion Intention Recognition via Multi-task RNNs.</span> SIAM
-                    International Conference on Data Mining (<a href="http://www.siam.org/meetings/sdm18/">SDM 2018</a>),
-                    San
-                    Diego, USA, May 3 - 5, 2018.
-
-                </p></li>
-                <li data-pub-year="2018"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Quan Z. Sheng, Salil S.
-                    Kanhere,
-                    Tao Gu and Dalin Zhang. <span class="pub-title">Converting Your Thougts to Texts: Enabling Brain Typing via Deep Feature Learning of EEG Signals.</span>
-                    IEEE International Conference on Pervasive Computing and Communications (<a
-                            href="http://www.percom.org/">Percom
-                        2018</a>), Athens, Greece, Mar 19, 2018 - Mar 23, 2018.
-
-                </p></li>
-                <li data-pub-year="2018"><p>Dalin Zhang, <span class="pub-me">Lina Yao</span>, Xiang Zhang, Sen Wang,
-                    Weitong
-                    Chen, Robert Boots. <span class="pub-title">Cascade and Parallel Convolutional Recurrent Neural Networks on EEG-based Intention Recognition for Brain Computer Interface.</span>
-                    The 32nd AAAI Conference on Artifical Intelligence (<a
-                            href="https://aaai.org/Conferences/AAAI/aaai18.php">AAAI-18</a>),
-                    New Orleans, Lousiana, USA, 2 - 7 February, 2018</p></li>
-
-                <li data-pub-year="2017"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Chaoran Huang, QuanZheng
-                    Sheng
-                    and Xianzhi Wang, <span class="pub-title"> Intent Recognition in Smart Living Through Deep Recurrent Neural Networks</span>.
-                    The 24th International Conference On Neural Information Processing (<a
-                            href="http://www.iconip2017.org/"><abbr
-                            title="The 24th International Conference On Neural Information Processing">ICONIP</abbr>
-                        2017</a>).
-                    Guangzhou, China, November 14-18, 2017.</p></li>
-
-                <li data-pub-year="2017"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Dalin Zhang, Xianzhi
-                    Wang, Quan
-                    Z. Sheng and Tao Gu. <span class="pub-title"> Multi-Person Brain Activity Recognition via Comprehensive EEG Signal Analysis</span>.
-                    The 14th International Conference on Mobile and Ubiquitous Systems: Computing, Networking and
-                    Services (<a
-                            href="http://mobiquitous.org/2017/show/home">Mobiquitous 2017</a>). Melbourne, Australia Nov
-                    7 - 10,
-                    2017</p></li>
-
-            </ol>
-
-            <!--<p class="mdl-typography&#45;&#45;display-1"><br/> Journal articles</p>-->
-            <!--<ol class="pub-list">-->
-            <!--</ol>-->
-        </div>
-
-        </p>
+        <div id="footer"></div>
     </div>
 </div>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
+</script>
 </body>
 </html>
