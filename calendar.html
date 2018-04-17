@@ -26,535 +26,98 @@
             z-index: 900;
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/d3.min.js"></script>
 </head>
 
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div id="navbar"></div>
-        <div class="content content-grid mdl-grid "><!--Begin page content column-->
-            <div class="mdl-typography-body-1 mdl-cell mdl-cell--12-col">
-                <h3 class="title-bg">Key Dates</h3>
-                <p class="lead">Here lists the key dates for the top conference. </p>
+        <div class="content">
+            <div class="content-grid mdl-grid">
+                <!--Begin page content column-->
+                <div class="mdl-typography-body-1 mdl-cell mdl-cell--12-col">
+                    <h3 class="title-bg">Key Dates</h3>
+                    <p class="lead">Here lists the key dates for the top conference. </p>
 
-                <table id="myTable" class="mdl-data-table mdl-js-data-table" border="1" cellpadding="1" cellspacing="1"
-                       style="font-size: smaller">
-                    <thead>
-                    <tr>
-                        <th class="mdl-data-table__cell--non-numeric">Conference</th>
-                        <th class="mdl-data-table__cell--non-numeric">Rank</th>
-                        <th class="mdl-data-table__cell--non-numeric">Deadline</th>
-                        <th class="mdl-data-table__cell--non-numeric">Time & Place</th>
-                        <th class="mdl-data-table__cell--non-numeric">Full name of the Conference</th>
-                        <th class="mdl-data-table__cell--non-numeric">Date for notification</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">KDD</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/02/17</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.kdd.org/kdd2017/">Aug. 13-17,
-                            2017,
-                            Halifax, Nova Scotia, Canada</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Knowledge Discovery
-                            and Data
-                            Mining
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Ubicomp</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/15</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://ubicomp.org/ubicomp2017/">Sept.
-                            11-15,
-                            2017, Maui, Hawaii</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Joint Conference on Pervasive and
-                            Ubiquitous
-                            Computing
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">SIGIR</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/01/29(full),2018/02/19(short)</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://sigir.org/sigir2018/">July 8-12,
-                            2018, Ann
-                            Arbor Michigan, U.S.A. </a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Research and
-                            Development in
-                            Information Retrieval
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/04/11</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">CIKM</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/05/16</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://cikm2017.org/">Nov. 6-10, 2017,
-                            Singapore</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Information and
-                            Knowledge
-                            Management
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">RecSys</td>
-                        <td class="mdl-data-table__cell--non-numeric">B</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/03</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://recsys.acm.org/recsys17/">Aug.
-                            27-31,
-                            2017, Como, Italy</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Recommender Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICDM</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/06/05</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://icdm2017.bigke.org/">Nov. 18-21,
-                            2017, New
-                            Orleans, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">IEEE International Conference on Data Mining</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/08/15</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">WSDM</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/08/11</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.wsdm-conference.org/2018/v">2018,
-                            Los
-                            Angeles, California, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Web Search and Data
-                            Mining
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">WISE</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/09</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.wise-conferences.org/">Oct.
-                            7-11,
-                            2017, Puschino, Moscow Region, Russia</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Web Information
-                            Systems
-                            Engineering
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ECML PKDD</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/01, 2017/11/05, 2017/12/10, 2018/01/28
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://ecmlpkdd2017.ijs.si/">Sept. 10-14,
-                            2018,
-                            Dublin, Ireland</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">European Conference on Machine Learning and
-                            Principles and
-                            Practice of Knowledge Discovery in Database
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICML</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/02/24</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://2017.icml.cc/">Aug. 6-11, 2017,
-                            International Convention Centre, Sydney, Australia</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Machine Learning</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">SDM</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/06, 2017/10/13</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.siam.org/meetings/sdm18/">San
-                            Diego,
-                            Califonia, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">SIAM International Conference on Data Mining</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">SIGGRAPH</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/02/14</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://s2017.siggraph.org/">Jul. 30- Aug.
-                            3,
-                            2017, Los Angeles, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">SIG International Conference on Computer Graphics
-                            and
-                            Interactive Techniques
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">IJCAI</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/02/19</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://ijcai-17.org/">Aug. 19-25, 2017,
-                            Melbourne, Australia</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Joint Conference on Artificial
-                            Intelligence
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">NIPS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/05/19</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://nips.cc/Conferences/2017">Dec.
-                            4-9, 2017,
-                            Long Beach Convention Center, Long Beach</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Advances in Neural Information Processing
-                            Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">WWW</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/27</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://www2018.thewebconf.org/">Apr.
-                            23-27,
-                            2018, Lyon, France</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International World Wide Web Conference</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">AAAI</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/09/11</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a
-                                href="http://www.aaai.org/Conferences/AAAI/aaai18.php">Feb.
-                            4-10, 2018, New Orleans, Lousiana, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">National Conference of the American Association
-                            for
-                            Artificial Intelligence
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/11/09</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICONIP</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/07/15</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.iconip2017.org/papers.html">Nov.
-                            14-18, 2017, Guangzhou, China</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Neural Information
-                            Processing
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICWS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">TBD</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="">July 1-6, 2018, San Francisco, USA</a>
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">IEEE International Conference on Web Services</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICSOC</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/06/06</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.icsoc.spilab.es/">Nov. 13-16,
-                            2017,
-                            Malaga, Spain</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Service Oriented
-                            Computing
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">CSCW</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/27</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://cscw.acm.org/2018/index.html">Oct/Nov.
-                            2018</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">ACM Conference on Computer Supported Cooperative
-                            Work
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">PAKDD</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/31</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://prada-research.net/pakdd18/">MAY
-                            15-18
-                            2018, MELBOURNE, AUSTRALIA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Pacific-Asia Conference on Knowledge Discovery and
-                            Data
-                            Mining
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/01/28</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/05/05</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://icis2017.aisnet.org/">Dec. 10-13,
-                            2017,
-                            Seoul, South Korea</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Information Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ECAI</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/02</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a
-                                href="https://www.eurai.org/activities/ECAI_conferences">Jul. 13-19, 2018, Stockholm</a>
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">European Conference on Artificial Intelligence
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">IJCNN</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric"> 2018/01/15</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.ecomp.poli.br/~wcci2018/">Jul.
-                            8-13,
-                            2018, Rio de Janeiro, Brazil Acre, Brazil</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">IEEE International Joint Conference on Neural
-                            Networks
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">AIM</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/02/11</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a
-                                href="http://www.ieee-ras.org/component/rseventspro/event/1133-aim-2018-2018-ieee-asme-international-conference-on-advanced-intelligent-mechatronics">Jul.
-                            24-27, 2018, Auckland, New Zealand</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Artificial Intelligence in Medicine</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">IDA</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/05/19</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.dcs.bbk.ac.uk/ida2017/">Oct.
-                            26-28,
-                            2017, London, UK</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Intelligent Data Analysis</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">AMCIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/02</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://amcis2018.aisnet.org/">Aug. 16-18,
-                            2018,
-                            New Orleans, LA, USA</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Americas Conference on Information Systems</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">OCIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/05/10</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.ocis.org.au/">Jul. 21-26,
-                            2018,
-                            Brisbane, Australia </a></td>
-                        <td class="mdl-data-table__cell--non-numeric">AoM Organizational Communication and Information
-                            Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ECIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/11/16</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.ecis2018.eu/">Jun. 23-28,
-                            2018,
-                            Portsmouth, UK</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">European Conference on Information Systems</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">CaiSE</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/11</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="">Jun. 2018</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Advanced Information
-                            Systems
-                            Engineering
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">CoopIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">TBD</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="">TBD</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Cooperative
-                            Information
-                            Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">PACIS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/03</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://pacis2018.jp/">Jun. 26-30, 2018,
-                            Yokohama, Japan </a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Pacific Asia Conference on Information Systems
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ISD</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/15</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a
-                                href="http://easyconferences.eu/portfolio/isd-2017/">Sept.
-                            6-8, 2017, Pyla, Larnaca, Cyprus</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Information Systems
-                            Development
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICDE</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/09/29</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="https://icde2018.org/">Apr. 16-20, 2018,
-                            Paris,
-                            France</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Data Engineering</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/12/22</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">UAI</td>
-                        <td class="mdl-data-table__cell--non-numeric">A*</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/03/01</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://auai.org/uai2017/index.php">Aug.
-                            11-15,
-                            2017, Sydney, Australia</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Conference in Uncertainty in Artificial
-                            Intelligence
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICDAR</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/04/01</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://u-pat.org/ICDAR2017/index.html">Nov.
-                            9-15,
-                            2017, Kyoto, Japan</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">IEEE International Conference on Document Analysis
-                            and
-                            Recognition
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">ICPR</td>
-                        <td class="mdl-data-table__cell--non-numeric">B</td>
-                        <td class="mdl-data-table__cell--non-numeric">2018/01/05</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.icpr2018.org/">Aug. 20-24,
-                            2018,
-                            Bejing, China</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Pattern Recognition
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">AISTATS</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/13</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.aistats.org/">Apr. 9-11, 2018,
-                            Playa
-                            Blanca, Lanzarote</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Artificial
-                            Intelligence and
-                            Statistics
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/12/22</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">IUI</td>
-                        <td class="mdl-data-table__cell--non-numeric">A</td>
-                        <td class="mdl-data-table__cell--non-numeric">2017/10/08</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://iui.acm.org/2018/">Mar. 7-11,
-                            2018, Tokyo,
-                            Japan</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">International Conference on Intelligent User
-                            Interfaces
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <table id="conf" class="mdl-data-table mdl-js-data-table sortable"
+                           border="1" cellpadding="1" cellspacing="1" style="font-size: smaller">
+                    </table>
+                    <script type="text/javascript" charset="utf-8">
+                        d3.text("data/calendar.csv", function (data) {
+                            var parsedCSV = d3.csv.parseRows(data);
+                            var container = d3.select("table").append("thead")
 
-                <p></p>
-                <p></p>
+                                .selectAll("tr")
+                                .data(parsedCSV).enter()
+                                .append("tr")
 
-                <h4>Related Links</h4>
+                                .selectAll("td")
+                                .data(function (d) {
+                                    return d;
+                                }).enter()
+                                .append("td")
+                                .text(function (d) {
+                                    return d;
+                                });
+                        });
+                    </script>
+                    <p></p>
+                    <p></p>
 
-                <p>For more information, please check</p>
+                    <h4>Related Links</h4>
 
-                <ul>
-                    <li><a href="http://www.wikicfp.com/cfp/">WIKICFP</a></li>
-                    <li><a href="http://portal.core.edu.au/conf-ranks/">Core rank</a></li>
-                    <li><a href="http://lipn.univ-paris13.fr/~bennani/CSRank.html/">CSRank</a></li>
-                    <li><a href="http://jeffhuang.com/best_paper_awards.html">Best paper award</a></li>
-                    <li>
-                        <a href="http://data-mining.philippe-fournier-viger.com/the-top-journals-and-conferences-in-data-mining-data-science/">Top
-                            Conference and Journal</a></li>
-                </ul>
+                    <p>For more information, please check</p>
+
+                    <ul>
+                        <li><a href="http://www.wikicfp.com/cfp/">WIKICFP</a></li>
+                        <li><a href="http://portal.core.edu.au/conf-ranks/">Core rank</a></li>
+                        <li><a href="http://lipn.univ-paris13.fr/~bennani/CSRank.html/">CSRank</a></li>
+                        <li><a href="http://jeffhuang.com/best_paper_awards.html">Best paper award</a></li>
+                        <li>
+                            <a href="http://data-mining.philippe-fournier-viger.com/the-top-journals-and-conferences-in-data-mining-data-science/">Top
+                                Conference and Journal</a></li>
+                    </ul>
 
 
-                <h3 class="title-bg">Reading Group and Learning Group</h3>
+                    <h3 class="title-bg">Reading Group and Learning Group</h3>
 
-                <p>Reading Group Coordinator: Xiang Zhang</p>
+                    <p>Reading Group Coordinator: Xiang Zhang</p>
 
-                <p>Learning Group Coordinator: Manqing Dong</p>
+                    <p>Learning Group Coordinator: Manqing Dong</p>
 
-                <p>Here are some rules that you need to follow:</p>
+                    <p>Here are some rules that you need to follow:</p>
 
-                <ol>
-                    <li>the reading group meetings will be held on Monday every two weeks;</li>
-                    <li>selecting the best papers from the top conferences of your research interests. Please note that
-                        the
-                        paper MUST come from a CORE A* conference with less than 2 years old.
-                    </li>
-                </ol>
+                    <ol>
+                        <li>the reading group meetings will be held on Monday every two weeks;</li>
+                        <li>selecting the best papers from the top conferences of your research interests. Please note
+                            that
+                            the
+                            paper MUST come from a CORE A* conference with less than 2 years old.
+                        </li>
+                    </ol>
 
-                <h6>Time & Place</h6>
+                    <h6>Time & Place</h6>
 
-                <ul>
-                    <li>Time: 3:00pm - 4:00pm Monday per fortnight</li>
-                    <li>Venue: K17, 401K</li>
-                </ul>
+                    <ul>
+                        <li>Time: 3:00pm - 4:00pm Monday per fortnight</li>
+                        <li>Venue: K17, 401K</li>
+                    </ul>
 
-                <p>Order: Xiang Zhang; Chaoran Huang; Shuai Zhang; Xiaodong Ning; Manqing Dong; Kaixuan Chen; Dalin
-                    Zhang; Yang
-                    Xiao; Lei Bai</p>
+                    <p>Order: Xiang Zhang; Chaoran Huang; Shuai Zhang; Xiaodong Ning; Manqing Dong; Kaixuan Chen; Dalin
+                        Zhang; Yang
+                        Xiao; Lei Bai</p>
 
-                <p>Slides of former reading and learning group, please visit: <a href="Groupwiki_Slides.htm">Slides</a>
-                </p>
+                    <p>Slides of former reading and learning group, please visit: <a
+                            href="Groupwiki_Slides.htm">Slides</a>
+                    </p>
 
-            </div> <!--End page content column-->
-        </div>
-
-
-    </div><!-- End container row -->
-    <div id="footer"></div>
-</div>
+                </div> <!--End page content column-->
+            </div>
+        </div><!-- End container row -->
+        <div id="footer"></div>
+    </div>
 </div>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script>
