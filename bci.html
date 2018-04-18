@@ -59,7 +59,7 @@
 
         <div class="content">
             <div class="content-grid mdl-grid">
-                <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
                 <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
                     <p><br/></p>
                     <p>
@@ -86,7 +86,7 @@
             <div class="content-grid mdl-grid">
                 <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
                 <div>
-                    <p class="mdl-typography--display-1"><br/> Group members</p>
+                    <p class="mdl-typography--display-1">Group members</p>
                     <p class="mdl-typography--headline">
                         Xiang Zhang, Dalin Zhang, Chaoran Huang
                     </p>
@@ -95,56 +95,28 @@
 
             <div class="content-grid mdl-grid">
                 <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
-                <div>
-                    <p class="mdl-typography--display-1"><br/> Conference papers</p>
+                <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
+                    <p class="mdl-typography--display-1">Conference papers</p>
                     <ol id="pub_conf">
                     </ol>
                     <script>
                         d3.text("data/pub_bci_conf.csv", function (data) {
                             var parsedCSV = d3.csv.parseRows(data).map(function (d) {
                                 return [d[0], d[1], d[2], d[3], d[4], d[5], d[6]]
-//                                {
-//                                    authors: d[0], title: d[1], conference: d[2], place: d[3],
-//                                    date: d[4], year: d[5], url: d[6]
-//                                }
                             });
-                            d3.select("#pub_conf")
-                                .selectAll("li")
-                                .data(parsedCSV, function (d) {
-                                    return d;
-                                }).enter()
-                                .append("li")
-                                .text(function (d) {
-                                    return [d[0], d[1], d[3], d[4], d[5], " "].join(", ");
-                                })
-                                .append("a")
-                                .attr("href", function (d) {
-                                    return d[6];
-                                })
-                                .text(function (d) {
-                                    return d[2];
-                                })
-
+                            d3.select("#pub_conf").selectAll("li").data(parsedCSV, function (d) {
+                                return d;
+                            }).enter().append("li").text(function (d) {
+                                return [d[0], d[1], d[3], d[4], d[5], " "].join(", ");
+                            }).append("a").attr("href", function (d) {
+                                return d[6];
+                            }).text(function (d) {
+                                return d[2];
+                            })
                         })
-
-
                     </script>
 
-                    <!--<li data-pub-year="2017"><p>Xiang Zhang, <span class="pub-me">Lina Yao</span>, Dalin Zhang,-->
-                    <!--Xianzhi-->
-                    <!--Wang, Quan-->
-                    <!--Z. Sheng and Tao Gu. <span class="pub-title"> Multi-Person Brain Activity Recognition via Comprehensive EEG Signal Analysis</span>.-->
-                    <!--The 14th International Conference on Mobile and Ubiquitous Systems: Computing, Networking-->
-                    <!--and-->
-                    <!--Services (<a-->
-                    <!--href="http://mobiquitous.org/2017/show/home">Mobiquitous 2017</a>). Melbourne,-->
-                    <!--Australia Nov-->
-                    <!--7 - 10,-->
-                    <!--2017</p></li>-->
-
-                    <!--</ol>-->
-
-                    <!--<p class="mdl-typography&#45;&#45;display-1"><br/> Journal articles</p>-->
+                    <!--<p class="mdl-typography--display-1"><br/> Journal articles</p>-->
                     <!--<ol class="pub-list">-->
                     <!--</ol>-->
                 </div>
