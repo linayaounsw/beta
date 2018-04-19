@@ -31,28 +31,6 @@
 </head>
 
 <body>
-<style>
-    .demo-card-image.mdl-card {
-        width: 256px;
-        height: 256px;
-        background: center / cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    .demo-card-image > .mdl-card__actions {
-        height: 52px;
-        padding: 16px;
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .demo-card-image__filename {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-    }
-</style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div id="navbar"></div>
@@ -86,13 +64,12 @@
             <div class="content-grid mdl-grid">
                 <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
                 <div>
-                    <p class="mdl-typography--display-1">Group members</p>
+                    <p class="mdl-typography--display-1">Researchers</p>
                     <p class="mdl-typography--headline">
                         Xiang Zhang, Dalin Zhang, Chaoran Huang
                     </p>
                 </div>
             </div>
-
             <div class="content-grid mdl-grid">
                 <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
                 <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
@@ -116,12 +93,24 @@
                         })
                     </script>
 
-                    <!--<p class="mdl-typography--display-1"><br/> Journal articles</p>-->
-                    <!--<ol class="pub-list">-->
-                    <!--</ol>-->
-                </div>
+                    <p class="mdl-typography--display-1">Journal articles</p>
+                    <ol id="pub_jour">
+                    </ol>
+                    <script>
+                        d3.text("data/pub_bci_jour.csv", function (data) {
+                            var parsedCSV = d3.csv.parseRows(data).map(function (d) {
+                                return [d[0], d[1], d[2], d[3], d[4]]
+                            });
+                            d3.select("#pub_jour").selectAll("li").data(parsedCSV, function (d) {
+                                return d;
+                            }).enter().append("li").text(function (d) {
+                                return [d[0], d[1], d[2], d[3]].join(", ");
+                            })
+                        })
+                    </script>
 
                 </p>
+            </div>
             </div>
         </div>
         <div id="footer"></div>

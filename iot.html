@@ -27,38 +27,18 @@
             z-index: 900;
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/d3.min.js"></script>
 </head>
 
 <body>
-<style>
-    .demo-card-image.mdl-card {
-        width: 256px;
-        height: 256px;
-        background: center / cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    .demo-card-image > .mdl-card__actions {
-        height: 52px;
-        padding: 16px;
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .demo-card-image__filename {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-    }
-</style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div id="navbar"></div>
+
         <div class="content">
             <div class="content-grid mdl-grid">
-                <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
                 <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
                     <p><br/></p>
                     <p>
@@ -82,51 +62,59 @@
                     </p>
                 </div>
             </div>
-            <p class="mdl-typography--display-1"><br/> Group members</p>
             <div class="content-grid mdl-grid">
-
-                <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-                     style='background-image: url("images/people/xiangzhang.jpg")'>
-                    <div class="mdl-card__title mdl-card--expand"></div>
-                    <div class="mdl-card__actions">
-                        <span class="demo-card-image__filename">Xiang Zhang</span>
-                    </div>
+                <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
+                <div>
+                    <p class="mdl-typography--display-1">Researchers</p>
+                    <p class="mdl-typography--headline">
+                        Xiang Zhang, Lei Bai, Chaoran Huang
+                    </p>
                 </div>
-
-                <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-                     style='background-image: url("images/people/bailei.jpg")'>
-                    <div class="mdl-card__title mdl-card--expand"></div>
-                    <div class="mdl-card__actions">
-                        <span class="demo-card-image__filename">Lei Bai</span>
-                    </div>
-                </div>
-
-                <div
-                        class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col"
-                     style='background-image: url("images/people/chaoran.jpg")'>
-                    <div class="mdl-card__title mdl-card--expand"></div>
-                    <div class="mdl-card__actions">
-                        <span class="demo-card-image__filename">Chaoran Huang</span>
-                    </div>
-                </div>
-
             </div>
 
             <div class="content-grid mdl-grid">
                 <p class="mdl-typography-body-1 mdl-cell mdl-cell--1-col"><br/></p>
-                <div>
-                    <!--<p class="mdl-typography&#45;&#45;display-1"><br/> Conference papers</p>-->
-                    <!--<ol class="pub-list">-->
-                    <!---->
-                    <!--</ol>-->
+                <div class="mdl-typography-body-1 mdl-cell mdl-cell--8-col">
+                    <p class="mdl-typography--display-1">Conference papers</p>
+                    <ol id="pub_conf">
+                    </ol>
+                    <script>
+                        d3.text("data/pub_iot_conf.csv", function (data) {
+                            var parsedCSV = d3.csv.parseRows(data).map(function (d) {
+                                return [d[0], d[1], d[2], d[3], d[4], d[5], d[6]]
+                            });
+                            d3.select("#pub_conf").selectAll("li").data(parsedCSV, function (d) {
+                                return d;
+                            }).enter().append("li").text(function (d) {
+                                return [d[0], d[1], d[3], d[4], d[5], " "].join(", ");
+                            }).append("a").attr("href", function (d) {
+                                return d[6];
+                            }).text(function (d) {
+                                return d[2];
+                            })
+                        })
+                    </script>
 
-                    <!--<p class="mdl-typography&#45;&#45;display-1"><br/> Journal articles</p>-->
-                    <!--<ol class="pub-list">-->
-                    <!--</ol>-->
+                    <p class="mdl-typography--display-1">Journal articles</p>
+                    <ol id="pub_jour">
+                    </ol>
+                    <script>
+                        d3.text("data/pub_iot_jour.csv", function (data) {
+                            var parsedCSV = d3.csv.parseRows(data).map(function (d) {
+                                return [d[0], d[1], d[2], d[3], d[4]]
+                            });
+                            d3.select("#pub_jour").selectAll("li").data(parsedCSV, function (d) {
+                                return d;
+                            }).enter().append("li").text(function (d) {
+                                return [d[0], d[1], d[2], d[3]].join(", ");
+                            })
+                        })
+                    </script>
+
+                    </p>
                 </div>
-
-                </p>
             </div>
+
         </div>
         <div id="footer"></div>
     </div>
