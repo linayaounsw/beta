@@ -17,6 +17,7 @@
     </style>
 </head>
 <body>
+<link rel="stylesheet" href="js/css/w3.css">
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/d3.min.js"></script>
@@ -35,7 +36,7 @@
             <p id="intro"><br/>
                 Our group research interest lies in Internet of Things Analytics/Cyber-Physical Systems, Data Mining,
                 Pervasive and Ubiquitous Computing, Ambient Intelligence and Service Computing. <br/>
-                The group is led by Dr Lina Yao, who is currently a lecturer at School of Computer Science and
+                The group is led by Dr Lina Yao, who is currently a senior lecturer at School of Computer Science and
                 Engineering,
                 The University of New South Wales (UNSW), Australia. She is ARC Discovery Early Career Researcher Award
                 (DECRA)
@@ -127,6 +128,32 @@
         </a>
         <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
     </div>
+    <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+    <div class="slideshow-container">
+        <img class="mySlides w3-animate-fading" src="group%20pic/event0.jpg" >
+        <img class="mySlides w3-animate-fading" src="group%20pic/event2.jpg">
+        <img class="mySlides w3-animate-fading" src="group%20pic/event3.jpg">
+        <img class="mySlides w3-animate-fading" src="group%20pic/event3_ext.jpg">
+        <img class="mySlides w3-animate-fading" src="group%20pic/event4.jpg">
+        <img class="mySlides w3-animate-fading" src="group%20pic/event5.jpg">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 9000);
+        }
+    </script>
+
 </div>
 </body>
 </html>
