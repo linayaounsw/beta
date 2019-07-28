@@ -8417,15 +8417,22 @@ h1, h2, h3, h4, h5,
   z-index: 0;
   margin-bottom: 50px; }
   .project .img {
-    object-fit: contain;
-    height: 350px;
-    width: 300px;
     position: relative;
     overflow: hidden;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px; }
+  .people .img {
+  object-fit: contain;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
   /*.project img {*/
   /*  -webkit-transform: scale(1.2);*/
   /*  -moz-transform: scale(1.2);*/
