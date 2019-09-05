@@ -30,7 +30,7 @@
 
     <style>
 
-        #demo {
+        #news {
             overflow:hidden;
             height:150px;
             width:500px;
@@ -70,37 +70,24 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
              data-scrollax-parent="true">
                       <div class="col-md-7 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-                          <div id="demo">
-                              <div id="demo1">
+                          <div id="news">
+                              <div id="news1">
                                   <p>Congratulations to Shuai on his paper accepted by NeurIPS 2019</p>
                                   <p>Congratulations to Xiang on his paper accepted by ICDM 2019 as Regular paper</p>
                                   <p>Congratulations to Lei, Kaixuan, Feng and Shuai on their papers accepted by IJCAI 2019</p>
                                   <p>Congratulations to Xiang on his paper accepted by KDD 2019 Research Track</p>
                                   <p>Congratulations to Kaixuan, Zhihui and Shuai on their papers accepted by AAAI-19</p>
                               </div>
-                              <div id="demo2"></div>
+                              <div id="news2"></div>
                           </div>
                       </div>
             <script type="text/javascript">
-                var demo=document.getElementById("demo");
-                var demo1=document.getElementById("demo1");
-                var demo2=document.getElementById("demo2");
-                var speed=50;
+                let demo=document.getElementById("news");
+                let demo1=document.getElementById("news1");
+                let demo2=document.getElementById("news2");
+                let speed=50;
                 demo2.innerHTML=demo1.innerHTML;
-                function moveTop(){
-                    if(demo1.offsetHeight-demo.scrollTop<=0){
-                        demo.scrollTop=0;
-                    }else{
-                        demo.scrollTop++;
-                    }
-                }
-                var myFunction=setInterval("moveTop()",speed);
-                demo.οnmοuseοver=function(){
-                    clearInterval(myFunction);
-                }
-                demo.οnmοuseοut=function(){
-                    myFunction=setInterval(moveTop,speed);
-                }
+                setInterval(() => (demo1.offsetHeight<=demo.scrollTop)? demo.scrollTop=0: demo.scrollTop++,speed);
             </script>
             <div class="col-md-5 d-flex">
                 <div class="row justify-content-start pb-3">
