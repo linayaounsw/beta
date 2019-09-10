@@ -1,9 +1,11 @@
-research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com", "photoname": "chaoranhuang.jpg"}];
-research_student = [{
+research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com", "photoname": "chaoranhuang.jpg"}, {
     "name": "Manqing Dong",
     "url": "https://www.cse.unsw.edu.au/~z5122290/",
     "photoname": "manqingdong.jpg"
-}, {
+}
+
+];
+research_student = [{
     "name": "Xiang Zhang",
     "url": "https://www.cse.unsw.edu.au/~z5119405/",
     "photoname": "xiangzhang.jpg"
@@ -40,11 +42,21 @@ research_student = [{
     "url": "#",
     "photoname": "NA.png"
 }];
-visitor = [{"name": "Qingyang Li", "url": "#", "photoname": "qingyangli.jpg"}, {
+visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
+    {"name": "Guozhao Luo", "url": "#", "photoname": "NA.png"},
+    {"name": "Chang Ge", "url": "#", "photoname": "NA.png"},
+    {"name": "Zesheng Ye", "url": "#", "photoname": "NA.png"},
+    {"name": "Shan Wang", "url": "#", "photoname": "NA.png"}
+];
+graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
+    "name": "Qingyang Li",
+    "url": "#",
+    "photoname": "qingyangli.jpg"
+}, {
     "name": "Huan Liu",
     "url": "#",
     "photoname": "huanliu.jpg"
-}, {"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"}, {
+}, {
     "name": "Xu Wang",
     "url": "#",
     "photoname": "xuwang.jpg"
@@ -61,7 +73,6 @@ visitor = [{"name": "Qingyang Li", "url": "#", "photoname": "qingyangli.jpg"}, {
     "url": "#",
     "photoname": "leiwang.jpg"
 }];
-graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}];
 
 eval(function (p, a, c, k, e, d) {
     e = function (c) {
