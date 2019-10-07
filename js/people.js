@@ -29,7 +29,8 @@ research_student = [{
     "name": "Zhe liu",
     "url": "#",
     "photoname": "zheliu.JPG"
-}, {"name": "Zhihui Li", "url": "#", "photoname": "zhihuili.jpg"}, {
+}, {"name": "Zhihui Li", "url": "#", "photoname": "zhihuili.jpg"},
+    {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg."}, {
     "name": "Yun Li",
     "url": "#",
     "photoname": "yunli.jpg"
