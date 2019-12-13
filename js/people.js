@@ -22,7 +22,7 @@ research_student = [{
     "url": "#",
     "photoname": "zheliu.JPG"
 }, {"name": "Zhihui Li", "url": "#", "photoname": "zhihuili.jpg"},
-    {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg."}, {
+    {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg"}, {
     "name": "Yun Li",
     "url": "#",
     "photoname": "yunli.jpg"
@@ -34,7 +34,7 @@ research_student = [{
     "name": "May Altulayan",
     "url": "#",
     "photoname": "NA.png"
-}, {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jdg"}];
+}, {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jpg"}];
 
 
 visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
