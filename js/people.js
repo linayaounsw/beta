@@ -34,7 +34,7 @@ research_student = [{
     "name": "May Altulayan",
     "url": "#",
     "photoname": "NA.png"
-}, {"name": "Zesheng Ye", "url": "#", "photoname": "zeshen.jdg"}];
+}, {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jdg"}];
 
 
 visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
