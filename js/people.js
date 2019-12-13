@@ -40,7 +40,6 @@ research_student = [{
 visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
     {"name": "Guozhao Luo", "url": "#", "photoname": "NA.png"},
     {"name": "Chang Ge", "url": "#", "photoname": "NA.png"},
-    {"name": "Zesheng Ye", "url": "#", "photoname": "NA.png"},
     {"name": "Shan Wang", "url": "#", "photoname": "NA.png"},
     {"name": "Jialun Li", "url": "#", "photoname": "NA.png"}
 ];
