@@ -8,7 +8,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148833726-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-148833726-1');
@@ -62,7 +66,7 @@
 <!-- END nav -->
 
 <section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5"
-         style="background-image: url('images/bg_3.jpg');">
+         style="background-image: url('images/demo_bg_bci.jpg');">
     <!--      <div class="overlay"></div>-->
     <div class="container">
         <div class="row no-gutters slider-text justify-content-center">
@@ -70,68 +74,87 @@
                 <h1><br><br></h1>
                 <h1 class="mb-3 bread">Research Demos</h1>
                 <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                        class="ion-ios-arrow-forward"></i></a></span> <span>Research Demos <i
-                        class="ion-ios-arrow-forward"></i></span></p>
+                        class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2">
+                    <a href="demos.html">Research Demos<i class="ion-ios-arrow-forward"></i></a></span>
+                    <span>BCI</span></p>
             </div>
         </div>
     </div>
 </section>
 <section class="ftco-section">
     <div class="container">
+        <h2>Brain-Computer-Interface-Systems</h2>
+        <p>This series of demos demonstrate our recent progress in regards to Brain Computer Interface (BCI) system. An
+            electroencephalography (EEG) based Brain Computer Interface (BCI) enables people to communicate with the
+            outside world by interpreting the EEG signals of their brains to interact with intelligent devices such as
+            wheelchairs and robots. More specifically, motor imagery EEG (MI-EEG), which reflects a subject’s active
+            movement intent, has been attracting increasing attention in developing an EEG-based BCI system.</p>
+        <h4>Mind control smart living</h4>
+        <p>A simulated robot is navigated by our system, which learns user’s intent from EEG recordings, to take a can
+            of beverage from a table in the kitchen and put it in a table in living room. Reusable source code and
+            dataset are provided in the github (<a href="https://github.com/xiangzhang1015">EEG-based-Control
+                repository</a>).</p>
         <center>
-        <div class="row">
-            <div class="col-md-6 col-lg-4 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <a href="demo_IoT.html"><img src="images/demo_bg_iot.png"
-                                                     class="img-fluid" alt="Internet of Things"></a>
-                    </div>
-                    <div class="text">
-                        <h3>Internet of Things</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <a href="demo_bci.html"><img src="images/demo_bg_bci.jpg"
-                                                     class="img-fluid" alt="Brain Computer Interface"></a>
-                    </div>
-                    <div class="text">
-                        <h3>Brain Computer Interface</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            <div class="row">
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <a href="demo_hba.html"><img src="images/demo_bg_hba.jpg"
-                                                         class="img-fluid" alt="Human Behaviour Analysis"></a>
-                        </div>
-                        <div class="text">
-                            <h3>Human Behaviour Analysis</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <a href="demo_rs.html"><img src="images/demo_bg_rs.jpg"
-                                                        class="img-fluid" alt="Recommender Systems"></a>
-                        </div>
-                        <div class="text">
-                            <h3>Recommender Systems</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/VZYX1095Vkc"
+                    width="560"></iframe>
         </center>
+        Related Papers
+        <ul>
+            <li>Weitong Chen, Sen Wang, Guodong Long, Lina Yao, Quan Zheng Sheng, and Xue Li, <strong>Dynamic Illness
+                Severity Prediction via Multi-task RNNs for Intensive Care Unit.</strong> IEEE International Conference
+                on Data Mining (ICDM 2018). Singapore, November 17-20, 2018.
+            </li>
+            <li>Dalin Zhang, Lina Yao, Kaixuan Chen, Sen Wang, <strong>Ready for Use: Subject-Independent Movement
+                Intention Recognition via A Convolutional Attention Model.</strong> The 27th ACM Conference on
+                Information and Knowledge Management (CIKM 2018). Lingotto, Turin, Italy, October 22 - 26, 2018
+            </li>
+            <li>Xiang Zhang,Lina Yao, Salil.S. Kanhere, Yunhao Liu, Tao Gu and Kaixuan Chen, <strong>MindID: Person
+                Identification from Brain Waves through Attention-based Recurrent Neural Network.</strong> 2018 ACM
+                International Joint Conference on Pervasive and Ubiquitous Computing (Ubicomp 2018). Singapore, October
+                8-12, 2018.
+            </li>
+            <li>Dalin Zhang,Lina Yao, Sen Wang, Kaixuan Chen, Zheng Yang and Boualem Benatallah, <strong>Fuzzy Integral
+                Optimization with Deep Q-Network for EEG-based Intention Recognition.</strong> The 22nd Pacific-Asia
+                Conference on Knowledge Discovery and Data Mining (PAKDD 2018). Melbourne, Australia, June 3 - 6, 2018.
+            </li>
+            <li>Dalin Zhang,Lina Yao, Xiang Zhang, Sen Wang, Weitong Chen and Robert Boots,<strong>EEG-based Intention
+                Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural
+                Networks.</strong> The 32nd AAAI Conference on Artifical Intelligence (AAAI-18), New Orleans, Lousiana,
+                USA, 2 - 7 February, 2018
+            </li>
+            <li>Xiang Zhang,Lina Yao, Dalin Zhang, Xianzhi Wang, Quan Z. Sheng and Tao Gu,<strong>Multi-Person Brain
+                Activity Recognition via Comprehensive EEG Signal Analysis.</strong> The 14th International Conference
+                on Mobile and Ubiquitous Systems: Computing, Networking and Services (Mobiquitous 2017), Melbourne,
+                Australia Nov 7 - 10, 2017.
+            </li>
+            <li>Xiang Zhang,Lina Yao, Chaoran Huang, QuanZheng Sheng and Xianzhi Wang, <strong>Intent Recognition in
+                Smart Living Through Deep Recurrent Neural Networks.</strong>The 24th International Conference On Neural
+                Information Processing (ICONIP 2017). Guangzhou, China, November 14-18, 2017.
+            </li>
+        </ul>
+        <h4>Brain Typing System</h4>
+        <p>An online brain typing system is developed to convert user’s thoughts to texts, which based on the high EEG
+            (brainwave) signals classification accuracy. Motor disabled people would benefit greatly from such a system
+            to express their thoughts and communicate with the outer world. <a
+                    href="https://drive.google.com/drive/folders/0B9MuJb6Xx2PIM0otakxuVHpkWkk">The
+                EEG dataset can be accessed from this link.</a></p>
+        <center>
+            <iframe allowfullscreen="" frameborder="0" height="315"
+                    src="https://www.youtube.com/embed/Dc0StUPq61k" width="560"></iframe>
+        </center>
+        Related Papers
+        <ul>
+            <li>Xiang Zhang, Lina Yao, Quan Z. Sheng, Salil S. Kanhere, Tao Gu and Dalin Zhang, <strong>Converting Your
+                Thoughts to Texts: Enabling Brain Typing via Deep Feature Learning of EEG Signals.</strong> IEEE
+                International Conference on Pervasive Computing and Communications (PerCom 2018). Athens, Greece, March
+                19-23, 2018.
+            </li>
+        </ul>
 
+        <!--        <h2>Some project demos from students who take research project in our group</h2>-->
+        <!--        <ul>-->
+        <!--            <li></li>-->
+        <!--        </ul>-->
     </div>
 </section>
 <footer class="ftco-footer ftco-footer-2 ftco-section">
