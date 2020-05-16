@@ -6,10 +6,6 @@ research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com"
 
 ];
 research_student = [{
-    "name": "Kaixuan Chen",
-    "url": "https://www.cse.unsw.edu.au/~z5099792/",
-    "photoname": "kaixuan.jpg"
-}, {"name": "Dalin Zhang", "url": "https://dalinzhang.github.io/", "photoname": "dalin.jpg"}, {
     "name": "Lei Bai",
     "url": "http://leibai.site",
     "photoname": "leibai.jpg"
@@ -77,7 +73,12 @@ graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
     "name": "Shuai Zhang",
         "url": "https://www.cse.unsw.edu.au/~z5122282/",
         "photoname": "shuai.jpg"
-}];
+},{
+    "name": "Kaixuan Chen",
+    "url": "https://www.cse.unsw.edu.au/~z5099792/",
+    "photoname": "kaixuan.jpg"
+}, {"name": "Dalin Zhang", "url": "https://dalinzhang.github.io/", "photoname": "dalin.jpg"}
+];
 
 eval(function (p, a, c, k, e, d) {
     e = function (c) {
