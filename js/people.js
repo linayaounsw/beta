@@ -67,17 +67,20 @@ graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
     "photoname": "leiwang.jpg"
 },{
     "name": "Xiang Zhang",
-        "url": "https://www.cse.unsw.edu.au/~z5119405/",
+        "url": "http://xiangzhang.info/",
         "photoname": "xiangzhang.jpg"
 }, {
     "name": "Shuai Zhang",
-        "url": "https://www.cse.unsw.edu.au/~z5122282/",
+        "url": "https://shuaizhang.tech/",
         "photoname": "shuai.jpg"
 },{
     "name": "Kaixuan Chen",
     "url": "https://www.cse.unsw.edu.au/~z5099792/",
     "photoname": "kaixuan.jpg"
-}, {"name": "Dalin Zhang", "url": "https://dalinzhang.github.io/", "photoname": "dalin.jpg"}
+}, {
+    "name": "Dalin Zhang",
+    "url": "https://dalinzhang.github.io/",
+    "photoname": "dalin.jpg"}
 ];
 
 eval(function (p, a, c, k, e, d) {
