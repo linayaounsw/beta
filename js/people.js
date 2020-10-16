@@ -30,7 +30,22 @@ research_student = [{
     "name": "May Altulayan",
     "url": "#",
     "photoname": "NA.png"
-}, {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jpg"}];
+},
+    {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jpg"
+    },
+    {
+    "name": "Le Pan", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Yao Liu", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Jing Du", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Wei Cui", "url": "#", "photoname":"NA.png"
+    }
+];
 
 
 visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
