@@ -5,48 +5,46 @@ research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com"
 }
 
 ];
-research_student = [
-    {
-        "name": "Lei Bai", "url": "http://leibai.site", "photoname": "leibai.jpg"
+research_student = [{
+    "name": "Lei Bai",
+    "url": "http://leibai.site",
+    "photoname": "leibai.jpg"
+},
+    {"name": "Usama Salama",
+        "url": "#",
+        "photoname": "usama.jpg"
     },
     {
-        "name": "Usama Salama", "url": "#", "photoname": "usama.jpg"
+    "name": "Yuanjiang Cao",
+    "url": "#",
+    "photoname": "yuanjiang.png"
+}, {"name": "Can Li",
+        "url": "#",
+        "photoname": "canli.jpg"},
+    {
+    "name": "Zhe liu",
+    "url": "#",
+    "photoname": "zheliu.JPG"
+}, {"name": "Zhihui Li",
+        "url": "#",
+        "photoname": "zhihuili.jpg"},
+    {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg"}, {
+    "name": "Yun Li",
+    "url": "#",
+    "photoname": "yunli.jpg"
+}, {"name": "Xiaocong Chen", "url": "#", "photoname": "xiaocongchen.jpg"}, {
+    "name": "Guanglin Zhou",
+    "url": "#",
+    "photoname": "guanglinzhou.jpg"
+}, {"name": "Xuesong Wang", "url": "#", "photoname": "xuesongwang.jpg"}, {
+    "name": "May Altulayan",
+    "url": "#",
+    "photoname": "NA.png"
+},
+    {"name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jpg"
     },
     {
-        "name": "Yuanjiang Cao", "url": "#", "photoname": "yuanjiang.png"
-    },
-    {
-        "name": "Can Li", "url": "#", "photoname": "canli.jpg"
-    },
-    {
-        "name": "Zhe liu", "url": "#", "photoname": "zheliu.JPG"
-    },
-    {
-        "name": "Zhihui Li", "url": "#", "photoname": "zhihuili.jpg"
-    },
-    {
-        "name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg"
-    },
-    {
-        "name": "Yun Li", "url": "#", "photoname": "yunli.jpg"
-    },
-    {
-        "name": "Xiaocong Chen", "url": "#", "photoname": "xiaocongchen.jpg"
-    },
-    {
-        "name": "Guanglin Zhou", "url": "#", "photoname": "guanglinzhou.jpg"
-    },
-    {
-        "name": "Xuesong Wang", "url": "#", "photoname": "xuesongwang.jpg"
-    },
-    {
-        "name": "May Altulayan", "url": "#", "photoname": "NA.png"
-    },
-    {
-        "name": "Zesheng Ye", "url": "#", "photoname": "zesheng.jpg"
-    },
-    {
-        "name": "Le Pan", "url": "#", "photoname":"NA.png"
+    "name": "Le Pan", "url": "#", "photoname":"NA.png"
     },
     {
         "name": "Yao Liu", "url": "#", "photoname":"NA.png"
@@ -59,7 +57,7 @@ research_student = [
     },
     {
         "name": "Xinzhe Zhang", "url": "#", "photoname":"NA.png"
-    },
+    }
 ];
 
 
@@ -67,10 +65,10 @@ visitor = [{"name": "Yang Xiao", "url": "#", "photoname": "xiao.jpg"},
     {"name": "Guozhao Luo", "url": "#", "photoname": "NA.png"},
     {"name": "Chang Ge", "url": "#", "photoname": "NA.png"},
     {"name": "Shan Wang", "url": "#", "photoname": "NA.png"},
-    {"name": "Jialun Li", "url": "#", "photoname": "NA.png"},
-    {"name": "Qinyang Li", "url": "#", "photoname": "NA.png"},
+    {"name": "Jialun Li", "url": "#", "photoname": "NA.png"}
 ];
-
+// undergraduate = [{"name": "Xiang Chen", "url":"#", "photoname": "NA.png"}
+// ];
 graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
     "name": "Qingyang Li",
     "url": "#",
