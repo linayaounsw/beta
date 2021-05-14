@@ -32,11 +32,13 @@ research_student = [{
     "name": "Yun Li",
     "url": "#",
     "photoname": "yunli.jpg"
-}, {"name": "Xiaocong Chen", "url": "#", "photoname": "xiaocongchen.jpg"}, {
+}, {"name": "Xiaocong Chen", "url": "#", "photoname": "xiaocongchen.jpg"},
+    {
     "name": "Guanglin Zhou",
     "url": "#",
     "photoname": "guanglinzhou.jpg"
-}, {"name": "Xuesong Wang", "url": "#", "photoname": "xuesongwang.jpg"}, {
+}, {"name": "Xuesong Wang", "url": "#", "photoname": "xuesongwang.jpg"},
+    {
     "name": "May Altulayan",
     "url": "#",
     "photoname": "NA.png"
@@ -57,6 +59,12 @@ research_student = [{
     },
     {
         "name": "Xinzhe Zhang", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Jingcheng Li", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Xiaoxin Ye", "url": "#", "photoname":"NA.png"
     }
 ];
 
