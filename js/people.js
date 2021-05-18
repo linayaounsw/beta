@@ -1,7 +1,8 @@
 research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com", "photoname": "chaoranhuang.jpg"}, {
-    "name": "Manqing Dong",
-    "url": "https://www.cse.unsw.edu.au/~z5122290/",
-    "photoname": "manqingdong.jpg"
+
+    "name": "Shakila Khan Rumi",
+    "url": "#",
+    "photoname": "rumi.jpg"
 }
 
 ];
@@ -65,6 +66,9 @@ research_student = [{
     },
     {
         "name": "Xiaoxin Ye", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Sam Dixon", "url": "#", "photoname":"NA.png"
     }
 ];
 
@@ -116,7 +120,12 @@ graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
 }, {
     "name": "Dalin Zhang",
     "url": "https://dalinzhang.github.io/",
-    "photoname": "dalin.jpg"}
+    "photoname": "dalin.jpg"
+},{
+    "name": "Manqing Dong",
+    "url": "https://www.cse.unsw.edu.au/~z5122290/",
+    "photoname": "manqingdong.jpg"
+}
 ];
 
 eval(function (p, a, c, k, e, d) {
