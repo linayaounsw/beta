@@ -3,6 +3,10 @@ research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com"
     "name": "Shakila Khan Rumi",
     "url": "#",
     "photoname": "rumi.jpg"
+},{
+    "name": "Wei Huang",
+    "url": "#",
+    "photoname": "weihuang.jpg"
 }
 
 ];
