@@ -59,9 +59,6 @@ research_student = [{
         "name": "Wei Cui", "url": "#", "photoname":"NA.png"
     },
     {
-        "name": "Xinzhe Zhang", "url": "#", "photoname":"NA.png"
-    },
-    {
         "name": "Jingcheng Li", "url": "#", "photoname":"NA.png"
     },
     {
@@ -69,7 +66,13 @@ research_student = [{
     },
     {
         "name": "Sam Dixon", "url": "#", "photoname":"NA.png"
-    }
+    },
+    {
+        "name": "Xinshu Li", "url": "#", "photoname":"NA.png"
+    },
+    {
+        "name": "Siyu Wang", "url": "#", "photoname":"NA.png"
+    },
 ];
 
 
