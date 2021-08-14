@@ -3,12 +3,14 @@ research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com"
     "name": "Shakila Khan Rumi",
     "url": "#",
     "photoname": "rumi.jpg"
-},{
-    "name": "Wei Huang",
-    "url": "#",
-    "photoname": "weihuang.jpg"
-}
-
+},
+    {
+        "name": "Zhe liu",
+        "url": "#",
+        "photoname": "zheliu.JPG"
+    }, {"name": "Zhihui Li",
+        "url": "#",
+        "photoname": "zhihuili.jpg"},
 ];
 research_student = [{
     "name": "Lei Bai",
@@ -26,13 +28,7 @@ research_student = [{
 }, {"name": "Can Li",
         "url": "#",
         "photoname": "canli.jpg"},
-    {
-    "name": "Zhe liu",
-    "url": "#",
-    "photoname": "zheliu.JPG"
-}, {"name": "Zhihui Li",
-        "url": "#",
-        "photoname": "zhihuili.jpg"},
+
     {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg"}, {
     "name": "Yun Li",
     "url": "#",
