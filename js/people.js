@@ -12,11 +12,7 @@ research_associate = [{"name": "Chaoran Huang", "url": "http://chaoranhuang.com"
         "url": "#",
         "photoname": "zhihuili.jpg"},
 ];
-research_student = [{
-    "name": "Lei Bai",
-    "url": "http://leibai.site",
-    "photoname": "leibai.jpg"
-},
+research_student = [
     {"name": "Usama Salama",
         "url": "#",
         "photoname": "usama.jpg"
@@ -128,7 +124,11 @@ graduate = [{"name": "Xiaodong Ning", "url": "#", "photoname": "ning.png"}, {
     "name": "Manqing Dong",
     "url": "https://www.cse.unsw.edu.au/~z5122290/",
     "photoname": "manqingdong.jpg"
-}
+}, {
+        "name": "Lei Bai",
+        "url": "http://leibai.site",
+        "photoname": "leibai.jpg"
+    },
 ];
 
 eval(function (p, a, c, k, e, d) {
