@@ -25,16 +25,25 @@ research_student = [
         "url": "#",
         "photoname": "canli.jpg"},
 
-    {"name": "Feng Yuan", "url": "#", "photoname": "fengyuan.jpg"}, {
+    {"name": "Feng Yuan",
+        "url": "#",
+        "photoname": "fengyuan.jpg"},
+    {
     "name": "Yun Li",
     "url": "#",
     "photoname": "yunli.jpg"
-}, {"name": "Xiaocong Chen", "url": "#", "photoname": "xiaocongchen.jpg"},
+}, {"name": "Xiaocong Chen",
+        "url": "#",
+        "photoname": "xiaocongchen.jpg"
+    },
     {
     "name": "Guanglin Zhou",
     "url": "#",
     "photoname": "guanglinzhou.jpg"
-}, {"name": "Xuesong Wang", "url": "#", "photoname": "xuesongwang.jpg"},
+}, {"name": "Xuesong Wang",
+        "url": "#",
+        "photoname": "xuesongwang.jpg"
+    },
     {
     "name": "May Altulayan",
     "url": "#",
